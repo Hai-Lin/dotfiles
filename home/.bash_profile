@@ -10,12 +10,12 @@ export PS1='\[\e[0;35m\]⌘ \[\e[m\]\[\e[1;32m\]\w \[\e[m\]\[\e[0;33m\]~> \[\e[m
 alias rm='rm -i'
 alias mkdir='mkdir -p'
 alias ..='cd ..'
-alias back='cd $OLDPWD'
+alias b='cd $OLDPWD'
 alias show='history | awk '\''{CMD[$2]++;count++;} END { for (a in CMD )print CMD[ a ]" " CMD[ a ]/count*100 "% " a }'\'' | grep -v "./" | column -c3 -s " " -t |sort -nr | nl | head -n10'
+alias h='cd'
 
 ####End of Aliases#######
 
-[[ -s /Users/hlin/.nvm/nvm.sh ]] && . /Users/hlin/.nvm/nvm.sh # This loads NVM
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
