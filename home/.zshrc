@@ -10,6 +10,10 @@ ZSH_THEME="Hai-Lin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ..='cd ..'
+alias b='cd $OLDPWD'
+alias show='history | awk '\''{CMD[$2]++;count++;} END { for (a in CMD )print CMD[ a ]" " CMD[ a ]/count*100 "% " a }'\'' | grep -v "./" | column -c3 -s " " -t |sort -nr | nl | head -n10'
+alias h='cd'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -40,12 +44,10 @@ ZSH_THEME="Hai-Lin"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails git ruby)
+plugins=(rails git ruby rvm knife)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
 export EDITOR=vi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
