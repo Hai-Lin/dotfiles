@@ -14,6 +14,7 @@ alias ..='cd ..'
 alias b='cd $OLDPWD'
 alias show='history | awk '\''{CMD[$2]++;count++;} END { for (a in CMD )print CMD[ a ]" " CMD[ a ]/count*100 "% " a }'\'' | grep -v "./" | column -c3 -s " " -t |sort -nr | nl | head -n10'
 alias h='cd'
+alias c='clear'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
