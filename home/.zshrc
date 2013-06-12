@@ -15,6 +15,7 @@ alias b='cd $OLDPWD'
 alias show='history | awk '\''{CMD[$2]++;count++;} END { for (a in CMD )print CMD[ a ]" " CMD[ a ]/count*100 "% " a }'\'' | grep -v "./" | column -c3 -s " " -t |sort -nr | nl | head -n10'
 alias h='cd'
 alias c='clear'
+alias mkdir='mkdir -p'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -45,9 +46,10 @@ alias c='clear'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails git ruby rvm knife)
+plugins=(rails git ruby rvm knife vagrant)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # Customize to your needs...
 export EDITOR=vi
