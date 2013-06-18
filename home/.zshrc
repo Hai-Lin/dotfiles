@@ -16,6 +16,7 @@ alias show='history | awk '\''{CMD[$2]++;count++;} END { for (a in CMD )print CM
 alias h='cd'
 alias c='clear'
 alias mkdir='mkdir -p'
+alias showport='lsof -i -P | grep -i "listen"'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
