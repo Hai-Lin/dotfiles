@@ -51,6 +51,7 @@ plugins=(rails git ruby rvm knife vagrant)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
+export LSCOLORS=gxfxaxdxcxegedabagacad
 
 # Customize to your needs...
 export EDITOR=vi
