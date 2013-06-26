@@ -1,6 +1,6 @@
 function ssh_connection() {
   if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || [ -n "$SSH_CONNECTION" ]; then
-    echo "%{$fg[red]%}%n@%m:"
+    echo "%{$fg[magenta]%}%n@%m:"
 	else
 		echo "%{$fg[magenta]%}⌘ "
   fi
