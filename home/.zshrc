@@ -34,7 +34,7 @@ alias showport='lsof -i -P | grep -i "listen"'
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
-# DISABLE_CORRECTION="true"
+DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -50,7 +50,6 @@ alias showport='lsof -i -P | grep -i "listen"'
 plugins=(rails git ruby rvm knife vagrant)
 
 source $ZSH/oh-my-zsh.sh
-unsetopt correct_all
 export LSCOLORS=gxfxaxdxcxegedabagacad
 
 # Customize to your needs...
