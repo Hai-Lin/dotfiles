@@ -1,4 +1,10 @@
-"set omni windows color 
+"mouse support
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
+
+set wrap
+"set omni windows color and highlight search color
 if version >= 700
   highlight   clear
   highlight   Pmenu         ctermfg=0 ctermbg=2 gui=bold
@@ -6,4 +12,9 @@ if version >= 700
   highlight   PmenuSel      ctermfg=0 ctermbg=7
   highlight   PmenuSbar     ctermfg=7 ctermbg=0
   highlight   PmenuThumb    ctermfg=0 ctermbg=7
+  hi Search cterm=NONE ctermfg=0 ctermbg=2 gui=bold
 endif
+
+" change the default EasyMotion shading to something more readable with Solarized
+hi link EasyMotionTarget ErrorMsg
+hi link EasyMotionShade  Comment
