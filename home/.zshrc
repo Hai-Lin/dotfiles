@@ -17,6 +17,7 @@ alias h='cd'
 alias c='clear'
 alias mkdir='mkdir -p'
 alias showport='lsof -i -P | grep -i "listen"'
+alias rsr='kill -9 `cat tmp/pids/server.pid`; rails server -d'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -53,5 +54,5 @@ source $ZSH/oh-my-zsh.sh
 export LSCOLORS=gxfxaxdxcxegedabagacad
 
 # Customize to your needs...
-export EDITOR=vi
+bindkey -v
 
