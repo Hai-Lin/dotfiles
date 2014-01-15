@@ -1,0 +1,12 @@
+
+# ignore dirs
+--ignore-dir=target
+--ignore-dir=.hg
+--ignore-dir=.git
+
+#color
+--color
+
+# ignore file
+--type-set=DUMB=.orig
+--noDUMB
