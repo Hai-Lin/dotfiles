@@ -3,6 +3,9 @@
 --ignore-dir=target
 --ignore-dir=.hg
 --ignore-dir=.git
+--ignore-dir=public
+--ignore-dir=log
+--ignore-dir=tmp
 
 #color
 --color
